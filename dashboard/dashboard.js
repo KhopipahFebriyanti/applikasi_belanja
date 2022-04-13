@@ -1,6 +1,6 @@
-window.addEventListener("load", ()=>{
-  /kita akan tambahkan element navbar ke body
-document.body.innerHTML += `
+window.addEventListener("load", () => {
+  //kita akan tambahkan element navbar ke body
+  document.body.innerHTML += `
 <div class="w-full p-6 fixed bottom-0 left-0 z-[100]">
 <nav
   class="w-full h-16 bg-orange-500 text-white flex item-center rounded-full max-w-[500px] mx-auto"
@@ -35,4 +35,4 @@ document.body.innerHTML += `
 </nav>
 </div>
 `;
-})
+});
