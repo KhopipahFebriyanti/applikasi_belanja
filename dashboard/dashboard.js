@@ -1,4 +1,5 @@
-//kita akan tambahkan element navbar ke body
+window.addEventListener("load", ()=>{
+  /kita akan tambahkan element navbar ke body
 document.body.innerHTML += `
 <div class="w-full p-6 fixed bottom-0 left-0 z-[100]">
 <nav
@@ -34,3 +35,4 @@ document.body.innerHTML += `
 </nav>
 </div>
 `;
+})
