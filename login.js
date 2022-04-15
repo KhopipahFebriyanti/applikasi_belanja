@@ -13,7 +13,7 @@ const handleLogin = (event) => {
 
   //find User
   let findUser = users.filter((item) => {
-    return item.email == email;
+    return item.email == email; //array
   });
 
   if (findUser.length == 0) {
@@ -32,7 +32,13 @@ const handleLogin = (event) => {
   }
 
   //setstorage bernama login
-  localStorage.setItem("isLogin", true);
+  localStorage.setItem(
+    "isLogin",
+    JSON.stringify({
+      email: findUser[0].email,
+      username: findUser[0].username,
+    })
+  );
 
   alert("Login Berhasil");
 

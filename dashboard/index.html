@@ -17,7 +17,47 @@
       class="w-full min-h-screen flex flex-col p-6 gap-4 max-w-[500px] mx-auto"
     >
       <h1 class="text-orange-500 font-light text-4xl">Wellcome Back</h1>
+
+      <!-- SECTION CARD DASHBORD -->
+      <div class="w-full flex flex-col gap-4 mt-6">
+        <div
+          class="w-full h-40 bg-gray-700 flex items-center justify-center text-white rounded-lg gap-2"
+        >
+          <i class="material-icons-outlined text-6xl"> account_circle</i>
+          <h1
+            class="text-white font-bold text-2xl italic capitalize z-[100]"
+            id="user_name"
+            id="user_name"
+          >
+            Username
+          </h1>
+
+          <img
+            src="https://picsum.photos/seed/22/300"
+            alt=""
+            class="w-full h-full absolute object-cover opacity-[.2]"
+          />
+        </div>
+
+        <div
+          class="w-full h-20 bg-orange-500 flex items-center px-4 text-white rounded-lg gap-2"
+        >
+          <i class="material-icons-outlined"> fact_check </i>
+          Total List Belanja
+          <b id="total_listbelanja" class="ml-auto text-2xl">0</b>
+        </div>
+
+        <div
+          class="w-full h-20 bg-green-500 flex items-center px-4 text-white rounded-lg gap-2"
+        >
+          <i class="material-icons-outlined"> check </i>
+          Total Belanja Selesai
+          <b id="total_listbelanja_finish" class="ml-auto text-2xl">0</b>
+        </div>
+      </div>
     </main>
     <script src="../dashboard.js"></script>
+    <script src="../readuser.js"></script>
+    <script src="../count.js"></script>
   </body>
 </html>
